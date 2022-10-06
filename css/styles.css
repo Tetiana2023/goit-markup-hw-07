@@ -53,6 +53,10 @@ body {
 .list {
 	list-style: none;
 }
+.section {
+	padding-top: 94px;
+	padding-bottom: 47px;
+}
 
 .logo {
 	color: var(--logo-color);
@@ -71,12 +75,7 @@ body {
 .logo__web {
 	color: var(--accent-color);
 }
-.foter__logo {
-	display: block;
-	margin-bottom: 20px;
-	padding: 0;
-	color: var(--primery-bg-color);
-}  
+ 
 
 /* header */
 
@@ -188,10 +187,7 @@ body {
 	margin-right: auto;
 }
 
-.section {
-	padding-top: 94px;
-	padding-bottom: 47px;
-}
+
 /* Button */
 .button {
 	border-radius: 4px;
@@ -434,6 +430,12 @@ body {
 	background-color: var(--hero-section-bg-color);
 	padding: 60px 0;
 }
+.foter__logo {
+	display: block;
+	margin-bottom: 20px;
+	padding: 0;
+	color: var(--primery-bg-color);
+} 
 .foter-adres .link {
 	display: block;
 	margin-top: 9px;
