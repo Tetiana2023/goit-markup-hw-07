@@ -7,7 +7,8 @@
 /*-цвет  footera background: #2F303A; або rgba(47, 48, 58, 1)*/
 /*-цвет background вторичний F5F4FA*/
 /* -цвет button при ховері фокусі ектів #188CE8 */
-/* -цвет tel в footer rgba(255, 255, 255, 0.6);*/
+/* -цвет tel в footer rgba(255, 255, 255, 0.6);
+/* -color-icon-foter rgba(68, 69, 78, 1);*/ 
 
 :root {
 	--primery-text-color: #757575;
@@ -21,6 +22,7 @@
 	--footer-tel-mail-color: rgba(255, 255, 255, 0.6);
 	--border: #eeeeee;
 	--border-clients: #afb1b8;
+	--color-icon-foter: rgba(68, 69, 78, 1);
 }
 
 h1,
@@ -361,6 +363,7 @@ body {
 	margin-bottom: 10px;
 	margin-top: 30px;
 }
+/* Sociat-list */
 
 .social-list {
 	display: flex;
@@ -368,10 +371,10 @@ body {
 	margin-bottom: 30px;
 }
 
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
 	margin-right: 10px;
 }
-.social-link {
+.social-list__link {
 	width: 44px;
 	height: 44px;
 	display: flex;
@@ -380,18 +383,21 @@ body {
 	border-radius: 50%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover,
-.social-link:focus {
+.social-list__link:hover,
+.social-list__link:focus  {
 	background-color: var(--accent-color);
+	fill: var(--primery-bg-color);	
 }
-.social-icon {
+.social-list__icon {
 	fill: var(--border-clients);
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover svg,
-.social-link:focus svg {
+} 
+.social-list__link:hover svg,
+.social-list__link:focus svg {
 	fill: var(--primery-bg-color);
-}
+}  
+
+
 
 /* section klients */
 .section-clients {
@@ -429,6 +435,7 @@ body {
 .foter {
 	background-color: var(--hero-section-bg-color);
 	padding: 60px 0;
+	
 }
 .foter__logo {
 	display: block;
@@ -436,21 +443,11 @@ body {
 	padding: 0;
 	color: var(--primery-bg-color);
 } 
-.foter-adres .link {
-	display: block;
-	margin-top: 9px;
+.foter-adres__item:not(:last-child) {
+	margin-bottom: 9px;
 }
-
-.link-address {
-	color: var(--primery-bg-color);
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	text-decoration: none;
+.foter-adres__link {
 	display: block;
-}
-.foter .link {
 	color: var(--footer-tel-mail-color);
 	font-style: normal;
 	font-weight: 400;
@@ -458,22 +455,41 @@ body {
 	line-height: 1.71;
 	text-decoration: none;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	
+
 }
-.foter .link:hover,
-.foter .link:focus {
+.foter-adres__link:hover,
+.foter-adres__link:focus {
 	color: var(--accent-color);
 }
 
-.foter-all {
-	display: flex;
-	align-items: baseline;
+.foter-adres__link--color {
+	color: var(--primery-bg-color);
 }
-.foter-two {
+
+.foter-all {
+	display: flex; 
+	align-items: baseline; 
+}  
+.foter-two { 
 	margin-left: 70px;
 	margin-right: auto;
 }
-.social-foter {
+.social-list__link--foter {
+	background-color: var(--color-icon-foter);
+}
+.social-list__icon--foter {
+	fill: var(--primery-bg-color);
+
+}
+.title__foter {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--primery-bg-color);
+}
+/* .social-foter {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -487,8 +503,8 @@ body {
 	color: var(--primery-bg-color);
 }
 .foter-link {
-	width: 40px;
-	height: 40px;
+	width: 44px;
+	height: 44px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -506,13 +522,15 @@ body {
 }
 .foter-item:not(:last-child) {
 	margin-right: 10px;
-}
+} */
+
+
 .foter-form { 
 	display: flex;
 	
 }
 
-.foter-form input {
+.foter-form__input {
 	display: flex; 
 	align-items: center; 
 	
@@ -530,7 +548,7 @@ body {
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
 }
-.foter-form input:focus {
+.foter-form__input:focus {
 	border: 1px solid var(--primery-bg-color);
 }
 
