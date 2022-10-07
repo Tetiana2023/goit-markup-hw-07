@@ -545,16 +545,38 @@ body {
 	padding-top: 94px;
 	padding-bottom: 100px;
 }
-.main-part__list {
+.menu-btn {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
 }
- .main-part__item:not(:first-child)  {
+ .menu-btn__item:not(:first-child)  {
 	margin-left: 8px;
 }
 
-.main-button {
+.menu-btn__button {
+	color: var(--title-text-color);
+	background-color: var(--secondary-bg-color);
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+}
+
+.menu-btn__button:hover,
+.menu-btn__button:focus {
+	color: var(--primery-bg-color);
+	background-color: var(--accent-color);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.menu-btn__button:active {
+	color: var(--primery-bg-color);
+	background-color: var(--accent-color);
+}
+
+/* .main-button {
 	color: var(--title-text-color);
 	background-color: var(--secondary-bg-color);
 	font-family: inherit;
@@ -575,7 +597,7 @@ body {
 .main-button:active {
 	color: var(--primery-bg-color);
 	background-color: var(--accent-color);
-}
+} */
 /*  List Works */
 
 .list-works {
@@ -805,14 +827,7 @@ body {
 }
  /* Chek-box */
 
- .checkbox-label {
-    display: flex;
-	justify-content: center;
-	align-items: center; 
-	margin-top: 20px;
-			
-}
-/* 
+ /* 
 .modal-form .btn{
 	margin-top: 30px;
 	margin-left: 124px;

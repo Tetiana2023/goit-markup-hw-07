@@ -4,10 +4,10 @@
 	margin-bottom: 30px;
 }
 
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
 	margin-right: 10px;
 }
-.social-link {
+.social-list__link {
 	width: 44px;
 	height: 44px;
 	display: flex;
@@ -15,16 +15,19 @@
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	
+	
 }
-.social-link:hover,
-.social-link:focus {
+.social-list__link:hover,
+.social-list__link:focus  {
 	background-color: var(--accent-color);
+	fill: var(--primery-bg-color);	
 }
-.social-icon {
+.social-list__icon {
 	fill: var(--border-clients);
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover svg,
-.social-link:focus svg {
+} 
+.social-list__link:hover svg,
+.social-list__link:focus svg {
 	fill: var(--primery-bg-color);
-}
+} 

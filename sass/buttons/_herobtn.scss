@@ -1,0 +1,12 @@
+.hero-button {
+	cursor: pointer;
+	padding: 10px 32px;
+	
+}
+.hero-button:hover,
+.hero-button:focus {
+	background-color: var(--accent-button-color);
+}
+.hero-button:active {
+	background-color: var(--accent-button-color);
+}
