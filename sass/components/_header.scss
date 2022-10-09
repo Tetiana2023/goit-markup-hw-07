@@ -9,9 +9,11 @@
 	align-items: center;
 	
 } 
+
 .main-nav__list {
     display: flex; 
 	margin-left: auto;
+	justify-content: center;
 }
 
 .main-nav__item:not(:last-child) {
@@ -35,7 +37,11 @@
 	color: var(--accent-color);
 }
 }
-
+.main-nav__contakts-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .main-nav__link--current {
 	position: relative;
