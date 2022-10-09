@@ -38,12 +38,6 @@
 	color: var(--accent-color);
 }
 }
-.main-nav__contakts-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .main-nav__link--current {
 	position: relative;
 	color: var(--accent-color);
@@ -58,9 +52,18 @@
 	display: block;
 	bottom: -1px;
 }
-
+.main-nav__contakts-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-nav__contakts-item:not(:first-child) {
+	margin-left: 50px;
+}
 .main-nav__contakts-link {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -83,7 +86,5 @@
 	fill: var(--accent-color);
 }
 }
-.main-nav__contakts-item:not(:first-child) {
-	margin-left: 50px;
-}
+
 

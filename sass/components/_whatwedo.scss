@@ -4,20 +4,20 @@
 }
 .whatwedo {
 	display: flex;
-}
-.whatwedo__item {
+	
+	&__item {
 	position: relative;
 	content: "";
 	margin-left: 30px;
 }
-.whatwedo__item:first-child {
+    &__item:first-child {
 	margin-left: 0;
 }
-.whatwedo__foto {
+    &__foto {
 	display: block;
 }
 
-.whatwedo__title {
+    &__title {
 	position: absolute;
 	width: 100%;
 	height: 70px;
@@ -33,4 +33,5 @@
 	text-transform: uppercase;
 	color: var(--primery-bg-color);
 	background: rgba(47, 48, 58, 0.8);
+}
 }
